@@ -1,10 +1,10 @@
-package com.kafkastreamtaxi.kafkastreamtaxi.kafka
+package com.kafkastreamstaxi.kafkastreamtaxi.kafka
 
-import com.kafkastreamstaxi.kafkastreamstaxi.TRIP_STORE
-import com.kafkastreamstaxi.kafkastreamstaxi.USER_STORE
-import com.kafkastreamstaxi.kafkastreamstaxi.getRiderId
-import com.kafkastreamstaxi.kafkastreamstaxi.models.Trip
-import com.kafkastreamstaxi.kafkastreamstaxi.models.User
+import com.kafkastreamstaxi.kafkastreamtaxi.TRIP_STORE
+import com.kafkastreamstaxi.kafkastreamtaxi.USER_STORE
+import com.kafkastreamstaxi.kafkastreamtaxi.getRiderId
+import com.kafkastreamstaxi.kafkastreamtaxi.models.Trip
+import com.kafkastreamstaxi.kafkastreamtaxi.models.User
 import org.apache.kafka.streams.state.QueryableStoreTypes.keyValueStore
 import org.apache.kafka.streams.state.ReadOnlyKeyValueStore
 import org.slf4j.LoggerFactory

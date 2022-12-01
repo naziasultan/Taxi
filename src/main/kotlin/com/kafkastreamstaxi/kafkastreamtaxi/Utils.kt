@@ -1,4 +1,4 @@
-package com.kafkastreamtaxi.kafkastreamtaxi
+package com.kafkastreamstaxi.kafkastreamtaxi
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 

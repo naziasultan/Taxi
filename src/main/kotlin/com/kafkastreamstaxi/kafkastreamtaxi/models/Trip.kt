@@ -1,4 +1,4 @@
-package com.kafkastreamtaxi.kafkastreamtaxi.models
+package com.kafkastreamstaxi.kafkastreamtaxi.models
 
 import com.datastax.driver.core.DataType
 import org.springframework.data.cassandra.core.mapping.CassandraType

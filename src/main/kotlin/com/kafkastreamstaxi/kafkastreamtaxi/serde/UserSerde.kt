@@ -1,7 +1,7 @@
-package org.jetbrains.kotlin.demo.serde
+package com.kafkastreamstaxi.kafkastreamtaxi.serde
 
-import com.kafkastreamstaxi.kafkastreamstaxi.models.User
-import com.kafkastreamstaxi.kafkastreamstaxi.objectMapper
+import com.kafkastreamstaxi.kafkastreamtaxi.models.User
+import com.kafkastreamstaxi.kafkastreamtaxi.objectMapper
 import org.apache.kafka.common.serialization.Deserializer
 import org.apache.kafka.common.serialization.Serde
 import org.apache.kafka.common.serialization.Serializer

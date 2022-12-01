@@ -1,14 +1,10 @@
-package com.kafkastreamtaxi.kafkastreamtaxi.ws
+package com.kafkastreamstaxi.kafkastreamtaxi.ws
 
-import com.kafkastreamstaxi.kafkastreamstaxi.models.Trip
-import com.kafkastreamstaxi.kafkastreamstaxi.models.TripStatus
-import com.kafkastreamstaxi.kafkastreamstaxi.models.User
-import com.kafkastreamstaxi.kafkastreamstaxi.models.UserType
-import com.kafkastreamstaxi.kafkastreamstaxi.kafka.Producer
-import com.kafkastreamstaxi.kafkastreamstaxi.kafka.Store
-import com.kafkastreamstaxi.kafkastreamstaxi.models.*
-import com.kafkastreamstaxi.kafkastreamstaxi.objectMapper
-import com.kafkastreamstaxi.kafkastreamstaxi.parseURLQuery
+import com.kafkastreamstaxi.kafkastreamtaxi.kafka.Producer
+import com.kafkastreamstaxi.kafkastreamtaxi.kafka.Store
+import com.kafkastreamstaxi.kafkastreamtaxi.models.*
+import com.kafkastreamstaxi.kafkastreamtaxi.objectMapper
+import com.kafkastreamstaxi.kafkastreamtaxi.parseURLQuery
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Configuration
 import org.springframework.stereotype.Component

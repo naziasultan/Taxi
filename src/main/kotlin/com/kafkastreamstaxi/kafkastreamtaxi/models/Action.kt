@@ -1,6 +1,6 @@
-package com.kafkastreamtaxi.kafkastreamtaxi.models
+package com.kafkastreamstaxi.kafkastreamtaxi.models
 
-import com.kafkastreamstaxi.kafkastreamstaxi.objectMapper
+import com.kafkastreamstaxi.kafkastreamtaxi.objectMapper
 
 
 enum class ACTION_TYPE {

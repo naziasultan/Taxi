@@ -1,18 +1,18 @@
-package com.kafkastreamtaxi.kafkastreamtaxi.kafka
+package com.kafkastreamstaxi.kafkastreamtaxi.kafka
 
-import com.kafkastreamstaxi.kafkastreamstaxi.*
-import com.kafkastreamstaxi.kafkastreamstaxi.cassandra.keyspace.trip.TripRepository
-import com.kafkastreamstaxi.kafkastreamstaxi.cassandra.keyspace.user.UserRepository
-import com.kafkastreamstaxi.kafkastreamstaxi.models.*
-import com.kafkastreamstaxi.kafkastreamstaxi.ws.WSDriver
-import com.kafkastreamstaxi.kafkastreamstaxi.ws.WSRider
+import com.kafkastreamstaxi.kafkastreamtaxi.*
+import com.kafkastreamstaxi.kafkastreamtaxi.models.*
+import com.kafkastreamtaxi.kafkastreamtaxi.cassandra.keyspace.trip.TripRepository
+import com.kafkastreamtaxi.kafkastreamtaxi.cassandra.keyspace.user.UserRepository
+import com.kafkastreamtaxi.kafkastreamtaxi.ws.WSDriver
+import com.kafkastreamstaxi.kafkastreamtaxi.ws.WSRider
 import org.apache.kafka.common.serialization.Serdes
 import org.apache.kafka.streams.KeyValue
 import org.apache.kafka.streams.kstream.Grouped
 import org.apache.kafka.streams.kstream.KStream
 import org.apache.kafka.streams.kstream.Materialized
-import org.jetbrains.kotlin.demo.serde.TripSerde
-import org.jetbrains.kotlin.demo.serde.UserSerde
+import com.kafkastreamstaxi.kafkastreamtaxi.serde.TripSerde
+import com.kafkastreamstaxi.kafkastreamtaxi.serde.UserSerde
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.cloud.stream.annotation.EnableBinding
 import org.springframework.cloud.stream.annotation.Input
@@ -30,7 +30,7 @@ class Consumer {
     @Autowired
     private lateinit var wsDriver: WSDriver
 
-    @StreamListener(Consumer.Bindings.USER_TOPIC)
+    @StreamListener(Bindings.USER_TOPIC)
     private fun processUsers(event: KStream<String, User>) {
         event
             .map { _, value -> KeyValue(value.id, value) }
@@ -56,7 +56,7 @@ class Consumer {
 
     }
 
-    @StreamListener(Consumer.Bindings.TRIP_TOPIC)
+    @StreamListener(Bindings.TRIP_TOPIC)
     private fun processTrips(event: KStream<String, Trip>) {
         event
             .map { _, value -> KeyValue(value.id, value) }

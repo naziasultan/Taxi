@@ -1,4 +1,4 @@
-package com.kafkastreamtaxi.kafkastreamtaxi
+package com.kafkastreamstaxi.kafkastreamtaxi
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,7 +1,7 @@
-package com.kafkastreamtaxi.kafkastreamtaxi.kafka
+package com.kafkastreamstaxi.kafkastreamtaxi.kafka
 
-import com.kafkastreamstaxi.kafkastreamstaxi.models.Trip
-import com.kafkastreamstaxi.kafkastreamstaxi.models.User
+import com.kafkastreamstaxi.kafkastreamtaxi.models.Trip
+import com.kafkastreamstaxi.kafkastreamtaxi.models.User
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.cloud.stream.annotation.EnableBinding
 import org.springframework.cloud.stream.annotation.Output
